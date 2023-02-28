@@ -5,13 +5,13 @@ import { ReactiveFormsModule } from '@angular/forms'
 // Shared Imports
 import { MaterialModule } from '@shared/modules'
 // This Module Imports
-import { MeHeaderComponent } from '@shared/components'
+import { NavbarComponent } from '../../components/navbar/navbar.component'
+import { FooterComponent } from '../../components/footer/footer.component'
 
-const components = [MeHeaderComponent]
-
+const components: any[] = [NavbarComponent, FooterComponent]
 @NgModule({
 	declarations: [...components],
 	imports: [CommonModule, ReactiveFormsModule, MaterialModule],
-	exports: [...components],
+	exports: [],
 })
 export class ComponentsModule {}

@@ -13,12 +13,13 @@ import { EffectsModule } from '@ngrx/effects'
 import { StoreDevtoolsModule } from '@ngrx/store-devtools'
 import { reducers, metaReducers } from '@store/reducers'
 import { effects } from '@store/effects'
-
+import { HomeModule } from './modules'
 @NgModule({
 	declarations: [AppComponent],
 	imports: [
 		BrowserModule.withServerTransition({ appId: 'serverApp' }),
 		AppRoutingModule,
+		HomeModule,
 		// Store (NGRX)
 		StoreModule.forRoot(reducers, { metaReducers }),
 		EffectsModule.forRoot(effects),
