@@ -21,6 +21,7 @@
 		"lib": ["es2020", "dom"],
 		"paths": {
 			// Shared and Global paths
+			"@shared/components": ["src/app/shared/components/index.ts"],
 			"@shared/services": ["src/app/shared/services/index.ts"],
 			"@shared/modules": ["src/app/shared/modules/index.ts"],
 			"@shared/models": ["src/app/shared/models/index.ts"],
@@ -31,8 +32,6 @@
 			"@shared/interceptors": ["src/app/shared/interceptors/index.ts"],
 			"@shared/validators": ["src/app/shared/validators/index.ts"],
 			"@environment": ["src/environments/environment.ts"],
-			"@store/*": ["src/app/store/*"],
-			"@modules/components": ["src/app/modules/components/index.ts"]
 		}
 	},
 	"angularCompilerOptions": {
