@@ -32,6 +32,7 @@
 			"@shared/interceptors": ["src/app/shared/interceptors/index.ts"],
 			"@shared/validators": ["src/app/shared/validators/index.ts"],
 			"@environment": ["src/environments/environment.ts"],
+			"@store/*": ["src/app/store/*"],
 			// Sections
 			"@home/sections": ["src/app/modules/home/sections"]
 		}

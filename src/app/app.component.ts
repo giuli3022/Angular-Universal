@@ -7,5 +7,5 @@ import { Component } from '@angular/core'
 	styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
-	title = 'template-angular-universal'
+	title = 'Giuliana Cecchetto - CV'
 }

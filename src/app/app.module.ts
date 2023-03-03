@@ -11,8 +11,6 @@ import { AppComponent } from './app.component'
 import { StoreModule } from '@ngrx/store'
 import { EffectsModule } from '@ngrx/effects'
 import { StoreDevtoolsModule } from '@ngrx/store-devtools'
-import { reducers, metaReducers } from '@store/reducers'
-import { effects } from '@store/effects'
 import { HomeModule } from './modules'
 @NgModule({
 	declarations: [AppComponent],
@@ -21,8 +19,6 @@ import { HomeModule } from './modules'
 		AppRoutingModule,
 		HomeModule,
 		// Store (NGRX)
-		StoreModule.forRoot(reducers, { metaReducers }),
-		EffectsModule.forRoot(effects),
 		StoreDevtoolsModule.instrument({
 			name: 'Angular Template Store',
 			maxAge: 25,
