@@ -32,6 +32,8 @@
 			"@shared/interceptors": ["src/app/shared/interceptors/index.ts"],
 			"@shared/validators": ["src/app/shared/validators/index.ts"],
 			"@environment": ["src/environments/environment.ts"],
+			// Sections
+			"@home/sections": ["src/app/modules/home/sections"]
 		}
 	},
 	"angularCompilerOptions": {
