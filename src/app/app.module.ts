@@ -6,18 +6,19 @@ import { environment } from '@environment'
 import { AppRoutingModule } from './app-routing.module'
 import { AppComponent } from './app.component'
 // Shared Imports
+import { ComponentsModule } from '@shared/components'
 
 // Store Imports
-import { StoreModule } from '@ngrx/store'
-import { EffectsModule } from '@ngrx/effects'
 import { StoreDevtoolsModule } from '@ngrx/store-devtools'
 import { HomeModule } from './modules'
+
 @NgModule({
 	declarations: [AppComponent],
 	imports: [
 		BrowserModule.withServerTransition({ appId: 'serverApp' }),
 		AppRoutingModule,
 		HomeModule,
+		ComponentsModule,
 		// Store (NGRX)
 		StoreDevtoolsModule.instrument({
 			name: 'Angular Template Store',
