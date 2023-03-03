@@ -10,7 +10,7 @@ import { HeroComponent } from '@home/sections'
 import { ExperienceComponent } from '@home/sections'
 import { ContactComponent } from '@home/sections'
 
-const views: any[] = [HeroComponent, ExperienceComponent, ContactComponent] 
+const views: any[] = [HeroComponent, ExperienceComponent, ContactComponent]
 @NgModule({
 	declarations: [...views],
 	imports: [CommonModule, ReactiveFormsModule, MaterialModule, ComponentsModule],
