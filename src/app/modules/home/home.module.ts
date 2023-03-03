@@ -5,10 +5,17 @@ import { ReactiveFormsModule } from '@angular/forms'
 // This Module Imports
 // Shared Imports
 import { MaterialModule } from '@shared/modules'
-import { ComponentsModule } from '../components/components.module'
+import { ComponentsModule } from '../components/components.module';
+import { HeroComponent } from './sections/hero/hero.component';
+import { ExperienceComponent } from './sections/experience/experience.component';
+import { ContactComponent } from './sections/contact/contact.component'
 
 @NgModule({
-	declarations: [],
+	declarations: [
+    HeroComponent,
+    ExperienceComponent,
+    ContactComponent
+  ],
 	imports: [CommonModule, ReactiveFormsModule, MaterialModule, ComponentsModule],
 })
 export class HomeModule {}
