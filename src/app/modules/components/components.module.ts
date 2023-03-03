@@ -1,17 +1,16 @@
-// Angular Imports
+// Angular imports
 import { NgModule } from '@angular/core'
 import { CommonModule } from '@angular/common'
 import { ReactiveFormsModule } from '@angular/forms'
+// This Module Imports
 // Shared Imports
 import { MaterialModule } from '@shared/modules'
-// This Module Imports
-import { NavbarComponent } from '../../components/navbar/navbar.component'
-import { FooterComponent } from '../../components/footer/footer.component'
+import { NavbarComponent } from '@modules/components'
+import { FooterComponent } from '@modules/components'
 
-const components: any[] = [NavbarComponent, FooterComponent]
 @NgModule({
-	declarations: [...components],
+	declarations: [],
 	imports: [CommonModule, ReactiveFormsModule, MaterialModule],
-	exports: [],
+	exports: [NavbarComponent, FooterComponent],
 })
 export class ComponentsModule {}

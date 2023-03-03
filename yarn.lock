@@ -1649,7 +1649,7 @@
   "resolved" "https://registry.npmjs.org/@ngtools/webpack/-/webpack-14.2.8.tgz"
   "version" "14.2.8"
 
-"@nguniversal/builders@14.2.3":
+"@nguniversal/builders@^14.2.3":
   "integrity" "sha512-4WpQ5zMfw4BIH/2ymWchFm2bbN8w0/sC0Rg3IracJ9ESsfTJMaIg8CzVer6NBqC+5As9iLZwau7nrfzt7sQf1A=="
   "resolved" "https://registry.npmjs.org/@nguniversal/builders/-/builders-14.2.3.tgz"
   "version" "14.2.3"
@@ -1675,7 +1675,7 @@
     "jsdom" "20.0.0"
     "tslib" "^2.3.0"
 
-"@nguniversal/express-engine@14.2.3":
+"@nguniversal/express-engine@^14.2.3":
   "integrity" "sha512-8G60LgQViz7caJbmL5f0Cw3mUtchVOiLUf9q1PKKhPVYMv9PVs1roKWuq1yAd4ZVMztBo93gyPt8vQGOo+C9WA=="
   "resolved" "https://registry.npmjs.org/@nguniversal/express-engine/-/express-engine-14.2.3.tgz"
   "version" "14.2.3"
@@ -1887,7 +1887,7 @@
     "@types/qs" "*"
     "@types/range-parser" "*"
 
-"@types/express@*", "@types/express@4.17.0":
+"@types/express@*", "@types/express@^4.17.0":
   "integrity" "sha512-CjaMu57cjgjuZbh9DpkloeGxV45CnMGlVd+XpG7Gm9QgVrd7KFq+X4HY0vM+2v0bczS48Wg7bvnMY5TN+Xmcfw=="
   "resolved" "https://registry.npmjs.org/@types/express/-/express-4.17.0.tgz"
   "version" "4.17.0"
@@ -4027,7 +4027,7 @@
     "signal-exit" "^3.0.3"
     "strip-final-newline" "^2.0.0"
 
-"express@^4.15.2", "express@4.15.2":
+"express@^4.15.2":
   "integrity" "sha512-zcWjYahMpHMWzQub5h04Tx7EY1Kmef0KXA2024pIpJAObNYU2rzY/J66otPCc0Y1Xn6Y/nosFq2S2AzIXAHGRw=="
   "resolved" "https://registry.npmjs.org/express/-/express-4.15.2.tgz"
   "version" "4.15.2"

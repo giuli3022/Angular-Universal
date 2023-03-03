@@ -6,7 +6,7 @@ import { environment } from '@environment'
 import { AppRoutingModule } from './app-routing.module'
 import { AppComponent } from './app.component'
 // Shared Imports
-import { ComponentsModule } from '@shared/modules'
+
 // Store Imports
 import { StoreModule } from '@ngrx/store'
 import { EffectsModule } from '@ngrx/effects'
@@ -29,7 +29,6 @@ import { HomeModule } from './modules'
 			logOnly: environment.production,
 			autoPause: true,
 		}),
-		ComponentsModule,
 	],
 	providers: [],
 	bootstrap: [AppComponent],
