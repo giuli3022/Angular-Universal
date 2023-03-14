@@ -2,16 +2,13 @@
 import { NgModule } from '@angular/core'
 import { CommonModule } from '@angular/common'
 import { ReactiveFormsModule } from '@angular/forms'
-// This Module Imports
+
 // Shared Imports
 import { MaterialModule } from '@shared/modules'
-import { HeroComponent } from '@home/sections'
-import { ExperienceComponent } from '@home/sections'
-import { ContactComponent } from '@home/sections'
+import { SectionsModule } from './sections/sections.module'
 
-const views: any[] = [HeroComponent, ExperienceComponent, ContactComponent]
 @NgModule({
-	declarations: [...views],
+	declarations: [],
 	imports: [CommonModule, ReactiveFormsModule, MaterialModule],
 })
 export class HomeModule {}

@@ -7,10 +7,7 @@
 */
 
 @forward './utils/_setting';
-@forward './utils/_tools';
-// @forward './utils/_material-theme'; // Theme for Angular Material
-@forward './utils/_generic';
 @forward './utils/_base';
 @forward './utils/_objects';
 @forward './utils/_components';
-@forward './utils/_trumps';
+@forward './utils/_mixins';

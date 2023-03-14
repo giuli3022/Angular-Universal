@@ -10,52 +10,23 @@
 // Sizes breakpoints
 $breakPoints: (
 	// zero
-	zr: 0,
+	xs: 0,
 	// mobile
-	mb: 320px,
+	s: 320px,
 	// landscape
-	ls: 576px,
+	md: 576px,
 	// tablet
-	tb: 768px,
+	l: 768px,
 	// desktop
-	dt: 992px,
+	xl: 992px,
 	// extra desktop
-	xd: 1200px
+	xxl: 1200px
 );
-// Fontsize and configurations
-$fontsize: 16px;
-$ratio: 1.25; // ratio
-$fontsizeNormal: $fontsize; // normal size, 16px
-$fontsizeHeadingThree: $fontsizeNormal * $ratio; // heading 3, 20px
-$fontsizeHeadingTwo: $fontsizeHeadingThree * $ratio; // heading 2, 25px
-$fontsizeHeadingOne: $fontsizeHeadingTwo * $ratio; // heading 1, 31.25px
-$fontsizeSmallOne: math.div($fontsizeNormal, $ratio); // small 1, 12.8px
-$fontsizeSmallTwo: math.div($fontsizeSmallOne, $ratio); // small 2, 8.192px
-$fontsizes: (
-	normal: 16px,
-	headingThree: 20px,
-	headingTwo: 25px,
-	headingOne: 32px,
-	smallOne: 12px,
-	smallTwo: 8px,
-);
+
 // Fonts family
-$roboto: 'Roboto', sans-serif;
-$quicksand: 'Quicksand', sans-serif;
-// Line height
-$lineHeight: 1.2;
-// Max width
-$maxWidth: 1280px;
-// Rounded sizes for edge and more
-$radius: (
-	z: 0,
-	xxs: 6px,
-	xs: 8px,
-	s: 12px,
-	m: 16px,
-	l: 24px,
-	xl: 32px,
-);
+$text: "Alegreya", serif;
+$heading: "Birthstone Bounce", cursive;
+
 // Sizes of spaced
 $spacing: (
 	z: 0,
@@ -65,14 +36,6 @@ $spacing: (
 	m: 24px,
 	l: 32px,
 	xl: 48px,
-);
-// List of z-index
-$zindexs: (
-	one: 1000,
-	two: 2000,
-	three: 3000,
-	four: 4000,
-	five: 5000,
 );
 
 // Colors palette

@@ -1,0 +1,9 @@
+@use './setting' as setting;
+@use 'sass:math';
+
+/*
+  En esta capa estarán:
+    1. herramientas que están disponible globalmente
+    2. funciones utilitarias
+    3. mixins
+*/

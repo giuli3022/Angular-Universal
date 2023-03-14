@@ -1,5 +1,4 @@
 @use './setting' as setting;
-@use './tools' as tools;
 @use 'sass:math';
 
 /*
@@ -18,7 +17,6 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	z-index: tools.zindexs(one);
-	background-color: rgba(tools.colors(dark), 0.5);
+	background-color: black;
 	opacity: 0.5;
 }

@@ -1,5 +1,4 @@
-@use './setting' as setting;
-@use './tools' as tools;
+@use "./setting" as setting;
 
 /*
   Capa base justo despues de las configuraciones
@@ -7,3 +6,11 @@
     2. por lo regular son selectores de etiqueta
     3. h1-h6, estilos básicos de los links, listas, etc..
 */
+
+body {
+  font-family: "Alegreya", serif;
+}
+
+h1 {
+  font-family: "Birthstone Bounce", cursive;
+}
