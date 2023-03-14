@@ -1,0 +1,20 @@
+@use "/src/app/styles/styles.scss" as styles;
+
+
+.navbar {
+    background-color: styles.$dark;
+    height: 4rem;
+    div {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        a {
+            color: styles.$light;
+            font-size: 3rem;
+            font-weight: 600;
+            text-decoration: none;
+            letter-spacing: 2px;
+        }
+    }
+}

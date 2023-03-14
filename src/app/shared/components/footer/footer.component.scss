@@ -1,0 +1,15 @@
+@use "/src/app/styles/styles.scss" as styles;
+
+footer {
+    background-color: styles.$dark;
+    height: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    p {
+        color: styles.$light;
+        font-size: 0.8rem;
+        margin: 0;
+    }
+}

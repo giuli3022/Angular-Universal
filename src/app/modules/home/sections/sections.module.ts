@@ -7,7 +7,6 @@ import { HeroComponent } from './hero/hero.component'
 import { ExperienceComponent } from './experience/experience.component'
 import { ContactComponent } from './contact/contact.component'
 
-
 const sections: any[] = [HeroComponent, ExperienceComponent, ContactComponent]
 
 @NgModule({
