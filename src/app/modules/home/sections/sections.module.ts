@@ -11,7 +11,7 @@ const sections: any[] = [HeroComponent, ExperienceComponent, ContactComponent]
 
 @NgModule({
 	declarations: [...sections],
-	imports: [CommonModule, ReactiveFormsModule],
+	imports: [CommonModule, ReactiveFormsModule, ],
 	exports: [...sections],
 })
 export class SectionsModule {}
