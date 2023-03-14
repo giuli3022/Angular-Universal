@@ -8,6 +8,6 @@ import { SectionsModule } from './sections/sections.module'
 
 @NgModule({
 	declarations: [],
-	imports: [CommonModule, ReactiveFormsModule, SectionsModule ],
+	imports: [CommonModule, ReactiveFormsModule, SectionsModule],
 })
 export class HomeModule {}
