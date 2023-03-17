@@ -1,0 +1,24 @@
+
+.Home {
+    padding: 7rem 0 5rem 0;
+}
+
+.Hero {
+    &_paragraph {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        h1 {
+            font-size: 5rem;
+        }
+    }
+    &_image {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        img {
+            width: 80%;
+        }
+    }
+}

@@ -44,11 +44,18 @@
 								"output": "assets"
 							}
 						],
-						"styles": ["src/index.scss"],
+						"styles": [
+							"node_modules/bootstrap/dist/css/bootstrap.min.css",
+							"src/index.scss"
+						],
 						"stylePreprocessorOptions": {
 							"includePaths": ["./src/app/styles"]
 						},
-						"scripts": [],
+						"scripts": [
+							"node_modules/jquery/dist/jquery.min.js",
+							"node_modules/@popperjs/core/dist/umd/popper.min.js",
+							"node_modules/bootstrap/dist/js/bootstrap.min.js"
+						],
 						"aot": true,
 						"vendorChunk": true,
 						"extractLicenses": false,
