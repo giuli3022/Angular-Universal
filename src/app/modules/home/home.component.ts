@@ -6,7 +6,7 @@ import { Component } from '@angular/core'
 	styleUrls: ['./home.component.scss'],
 })
 export class HomeComponent {
-	skills : Skill[] = [
+	skills: Skill[] = [
 		{
 			name: 'HTML',
 			img: '/assets/images/icons/html-5.png',
@@ -46,9 +46,8 @@ export class HomeComponent {
 	]
 
 	constructor() {}
-
 }
 interface Skill {
-	name: string;
-	img: string;
+	name: string
+	img: string
 }
