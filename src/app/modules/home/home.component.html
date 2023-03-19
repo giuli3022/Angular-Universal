@@ -15,19 +15,30 @@
 		</div>
 	</article>
 	
-	
-	<h1>My experience</h1>
-	<ul>
-		<li>HTML</li>
-		<li>CSS</li>
-		<li>Sass</li>
-		<li>Bootstrap</li>
-		<li>Javascript</li>
-		<li>Typescript</li>
-		<li>React</li>
-		<li>Angular</li>
-		<li>Ionic</li>
-	</ul>
+	<article class="Experience row">
+		<h1>My experience</h1>
+		<div class="Experience_skills col-md-7">
+			<ul>
+				<li *ngFor="let skill of skills">
+					<img src="{{skill.img}}" alt="{{skill.name}}">
+					<h6>{{ skill.name }}</h6>
+				</li>
+			</ul>		
+		</div>
+		<div class="Experience_download col-md-5">
+			<button class="Button_download">
+				<img src="/assets/images/icons/download.png" alt="download">
+				CV in English
+			</button>
+			<button class="Button_download">
+				<img src="/assets/images/icons/download.png" alt="download">
+				CV in Spanish
+			</button>
+		</div>
+	</article>
+
+
+
 	<h1>Find me in...</h1>
 	<a href="">GitHub</a>
 	<a href="">Linkedin</a>

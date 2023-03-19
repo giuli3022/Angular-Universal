@@ -6,3 +6,19 @@
     2. colores, tipografías, branding de la marca o empresa
     3. exclusivamente se usaran selectores de clases
 */
+
+.Button {
+  &_download {
+    background-color: transparent;
+    width: 15rem;
+    font-weight: 600;
+    color: setting.$dark;
+    padding: 1rem 2rem;
+    border: 1px solid setting.$secondary;
+    border-radius: 4px;
+    img {
+      width: 2rem;
+      margin-right: 1rem;
+    }
+  }
+}

@@ -22,3 +22,41 @@
         }
     }
 }
+
+.Experience {
+    padding: 5rem 0;
+    h1 {
+        font-size: 5rem;
+        text-align: center;
+        margin-bottom: 5rem;
+    }
+    &_skills {
+        ul {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 0;
+            li {
+                width: 20%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                list-style: none;
+                margin-bottom: 2rem;
+                img {
+                    width: 5rem;
+                    margin-bottom: 1rem;
+                }
+            }
+        }
+    }
+    &_download {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        button:first-child {
+            margin-bottom: 2rem;
+        }
+    }
+}

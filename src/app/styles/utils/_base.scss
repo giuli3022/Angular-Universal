@@ -9,10 +9,16 @@
 
 body {
   background-color: setting.$light;
-  font-family: "Alegreya", serif;
+  font-family: setting.$text;
   margin: 0;
 }
 
 h1 {
-  font-family: "Birthstone Bounce", cursive;
+  font-family: setting.$heading;
+  color: setting.$primary;
+}
+
+p {
+  font-family: setting.$text;
+  color: setting.$dark;
 }
