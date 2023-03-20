@@ -1,4 +1,4 @@
-@use './setting' as setting;
+@use "./setting" as setting;
 
 /*
   En esta capa estarán:
@@ -16,9 +16,30 @@
     padding: 1rem 2rem;
     border: 1px solid setting.$secondary;
     border-radius: 4px;
+    text-decoration: none;
     img {
       width: 2rem;
       margin-right: 1rem;
+    }
+    &:hover {
+      cursor: pointer;
+      color: setting.$dark;
+    }
+  }
+  &_links {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: setting.$dark;
+    text-decoration: none;
+    padding: 1rem 2rem;
+    img {
+      width: 3rem;
+      margin-right: 1rem;
+    }
+    &:hover {
+      cursor: pointer;
+      color: setting.$dark;
+      text-decoration: underline;
     }
   }
 }

@@ -1,46 +1,68 @@
-
-
 <section class="Home container">
 	<article class="Hero row">
 		<div class="Hero_paragraph col-md-5">
 			<h1>Hi there!</h1>
 			<p>
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi labore veritatis ratione natus.
-				Expedita odit vel ad, eveniet nam, recusandae eaque, qui quas modi a dolore accusantium magni
-				quasi natus?
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi labore veritatis ratione
+				natus. Expedita odit vel ad, eveniet nam, recusandae eaque, qui quas modi a dolore
+				accusantium magni quasi natus?
 			</p>
 		</div>
 		<div class="Hero_image col-md-7">
-			<img src="/assets/images/girl.png" alt="dev-img">
+			<img src="/assets/images/girl.png" alt="dev-img" />
 		</div>
 	</article>
-	
+
 	<article class="Experience row">
 		<h1>My experience</h1>
 		<div class="Experience_skills col-md-7">
 			<ul>
 				<li *ngFor="let skill of skills">
-					<img src="{{skill.img}}" alt="{{skill.name}}">
+					<img src="{{ skill.img }}" alt="{{ skill.name }}" />
 					<h6>{{ skill.name }}</h6>
 				</li>
-			</ul>		
+			</ul>
 		</div>
 		<div class="Experience_download col-md-5">
-			<button class="Button_download">
-				<img src="/assets/images/icons/download.png" alt="download">
+			<a
+				href="/assets/docs/Giuliana Cecchetto - ENG.pdf"
+				download="Giuliana Cecchetto - ENG"
+				class="Button_download"
+			>
+				<img src="/assets/images/icons/download.png" alt="download" />
 				CV in English
-			</button>
-			<button class="Button_download">
-				<img src="/assets/images/icons/download.png" alt="download">
+			</a>
+			<a
+				href="/assets/docs/Giuliana Cecchetto - ESP.pdf"
+				download="Giuliana Cecchetto - ESP"
+				class="Button_download"
+			>
+				<img src="/assets/images/icons/download.png" alt="download" />
 				CV in Spanish
-			</button>
+			</a>
 		</div>
 	</article>
 
-
-
-	<h1>Find me in...</h1>
-	<a href="">GitHub</a>
-	<a href="">Linkedin</a>
-	<a href="">Email</a>
+	<article class="Contact row">
+		<h1>Find me in...</h1>
+		<div class="Contact_links col-md-5">
+			<div>
+				<a class="Button_links" href="https://github.com/giuli3022">
+					<img src="/assets/images/icons/git.png" alt="icon" />
+					GitHub
+				</a>
+				<a class="Button_links" href="https://www.linkedin.com/in/giuliana-cecchetto/">
+					<img src="/assets/images/icons/linkedin.png" alt="icon" />
+					Linkedin
+				</a>
+				<a class="Button_links" href="mailto:giulicecchetto@gmail.com">
+					<img src="/assets/images/icons/email.png" alt="icon" />
+					Email
+				</a>
+			</div>
+		</div>
+		<div class="Contact_image col-md-7">
+			<img src="/assets/images/detective.png" alt="detective" />
+		</div>
+	</article>
 </section>
