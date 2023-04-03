@@ -1,4 +1,5 @@
 @use "./setting" as setting;
+@use "./mixins" as mixin;
 
 /*
   En esta capa estarán:
@@ -8,6 +9,7 @@
 */
 
 .Button {
+  //DOWNLOAD BUTTON
   &_download {
     background-color: transparent;
     width: 15rem;
@@ -26,20 +28,27 @@
       color: setting.$dark;
     }
   }
+  //LINK BUTTON
   &_links {
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-weight: 600;
     color: setting.$dark;
     text-decoration: none;
     padding: 1rem 2rem;
     img {
-      width: 3rem;
+      width: 2rem;
       margin-right: 1rem;
     }
     &:hover {
       cursor: pointer;
       color: setting.$dark;
       text-decoration: underline;
+    }
+    @include mixin.from(md) {
+      font-size: 1.5rem;
+      img {
+        width: 3rem;
+      }
     }
   }
 }
