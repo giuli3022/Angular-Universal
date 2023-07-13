@@ -5,8 +5,9 @@ import { ReactiveFormsModule } from '@angular/forms'
 // Shared Imports
 import { NavbarComponent } from './navbar/navbar.component'
 import { FooterComponent } from './footer/footer.component'
+import { SidebarComponent } from './sidebar/sidebar.component'
 
-const components: any[] = [NavbarComponent, FooterComponent]
+const components: any[] = [NavbarComponent, FooterComponent, SidebarComponent]
 
 @NgModule({
 	declarations: [...components],

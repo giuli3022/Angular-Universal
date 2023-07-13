@@ -1,0 +1,45 @@
+@use "/src/app/styles/styles.scss" as styles;
+
+.sidebar {
+    background-color: styles.$dark;
+    height: 100vh;
+    width: 20%;
+    position: absolute;
+    z-index: 100;
+    div {
+        height: 80%;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        flex-direction: column;
+    }
+    ul {
+        li {
+            color: styles.$light;
+            padding-bottom: 1rem;
+            list-style: none;
+            a {
+                color: styles.$light;
+                font-weight: 500;
+                text-decoration: none;
+            }
+            .active {
+                color: styles.$accent;
+            }
+        }
+    }
+    &-footer {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        position: absolute;
+        bottom: 1rem;
+        left: 0;
+        padding: 0;
+        li {
+            color: styles.$light;
+            list-style: none;
+        }
+    }
+}
