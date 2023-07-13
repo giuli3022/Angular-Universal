@@ -10,14 +10,13 @@ import { ComponentsModule } from '@shared/components'
 
 // Store Imports
 import { StoreDevtoolsModule } from '@ngrx/store-devtools'
-import { HomeModule } from './modules'
+
 
 @NgModule({
 	declarations: [AppComponent],
 	imports: [
 		BrowserModule.withServerTransition({ appId: 'serverApp' }),
 		AppRoutingModule,
-		HomeModule,
 		ComponentsModule,
 		// Store (NGRX)
 		StoreDevtoolsModule.instrument({
