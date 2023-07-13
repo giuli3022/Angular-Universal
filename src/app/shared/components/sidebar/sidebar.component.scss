@@ -1,6 +1,7 @@
 @use "/src/app/styles/styles.scss" as styles;
 
 .sidebar {
+    display: none;
     background-color: styles.$dark;
     height: 100vh;
     width: 20%;
@@ -42,4 +43,9 @@
             list-style: none;
         }
     }
+
+    .showSidebar {
+        display: block;
+    }
+    
 }
