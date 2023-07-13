@@ -1,4 +1,4 @@
-import { Component, Output, EventEmitter } from '@angular/core';
+import { Component, Output, EventEmitter } from '@angular/core'
 
 @Component({
 	selector: 'app-navbar',
@@ -6,11 +6,11 @@ import { Component, Output, EventEmitter } from '@angular/core';
 	styleUrls: ['./navbar.component.scss'],
 })
 export class NavbarComponent {
-	@Output() sidebarToggled = new EventEmitter<void>();
+	@Output() sidebarToggled = new EventEmitter<void>()
 
-	constructor() { }
+	constructor() {}
 
 	toggleSidebar() {
-		this.sidebarToggled.emit();
+		this.sidebarToggled.emit()
 	}
 }
