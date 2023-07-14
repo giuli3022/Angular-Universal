@@ -12,14 +12,18 @@ export class SidebarComponent {
 	toggleSidebar() {
 		this.isSidebarOpen = !this.isSidebarOpen
 		if (this.isSidebarOpen) {
+			let brand = document.querySelector('.navbar-brand') as HTMLElement
 			let sidebar = document.querySelector('.sidebar') as HTMLElement
 			if (sidebar) {
 				sidebar.style.display = 'block'
+				brand.style.color = '#EFEFEF'
 			}
 		} else {
+			let brand = document.querySelector('.navbar-brand') as HTMLElement
 			let sidebar = document.querySelector('.sidebar') as HTMLElement
 			if (sidebar) {
 				sidebar.style.display = 'none'
+				brand.style.color = '#032539'
 			}
 		}
 	}

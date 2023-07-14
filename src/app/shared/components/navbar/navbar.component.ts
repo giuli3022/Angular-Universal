@@ -11,6 +11,8 @@ export class NavbarComponent {
 	constructor() {}
 
 	toggleSidebar() {
+
 		this.sidebarToggled.emit()
+
 	}
 }
