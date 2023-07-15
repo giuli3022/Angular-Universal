@@ -7,6 +7,11 @@
     width: 20%;
     position: absolute;
     z-index: 100;
+    nav {
+        a {
+            color: white;
+        }
+    }
     div {
         height: 80%;
         display: flex;

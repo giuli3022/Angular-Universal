@@ -1,6 +1,8 @@
 // Angular Imports
-import { NgModule } from '@angular/core'
-import { RouterModule, Routes } from '@angular/router'
+import { NgModule } from '@angular/core';
+import { RouterModule, Routes } from '@angular/router';
+
+//Angular Components
 import { HomeComponent } from './modules/home/home.component'
 import { ContactComponent } from './modules/contact/contact.component'
 import { ProjectsComponent } from './modules/projects/projects.component'
@@ -14,7 +16,7 @@ const routes: Routes = [
 	{
 		path: '**',
 		pathMatch: 'full',
-		redirectTo: '',
+		redirectTo: 'HomeComponent',
 	},
 	{
 		path: 'home',
@@ -34,12 +36,21 @@ const routes: Routes = [
 	},
 ]
 
+
 @NgModule({
 	imports: [
-		RouterModule.forRoot(routes, {
-			initialNavigation: 'enabledBlocking',
-		}),
+	  RouterModule.forRoot(
+		routes,
+		{
+		  enableTracing: false,
+		}
+	  )
 	],
-	exports: [RouterModule],
-})
+	exports: [
+	  RouterModule
+	]
+  })
+  
+  
 export class AppRoutingModule {}
+
