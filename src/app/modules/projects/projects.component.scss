@@ -1,0 +1,7 @@
+@use 'styles' as styles;
+
+.Projects {
+    height: calc(100vh - 8rem);
+    display: flex;
+    align-items: center;
+}

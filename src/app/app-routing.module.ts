@@ -1,6 +1,6 @@
 // Angular Imports
-import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
+import { NgModule } from '@angular/core'
+import { RouterModule, Routes } from '@angular/router'
 
 //Angular Components
 import { HomeComponent } from './modules/home/home.component'
@@ -36,21 +36,12 @@ const routes: Routes = [
 	},
 ]
 
-
 @NgModule({
 	imports: [
-	  RouterModule.forRoot(
-		routes,
-		{
-		  enableTracing: false,
-		}
-	  )
+		RouterModule.forRoot(routes, {
+			enableTracing: false,
+		}),
 	],
-	exports: [
-	  RouterModule
-	]
-  })
-  
-  
+	exports: [RouterModule],
+})
 export class AppRoutingModule {}
-
