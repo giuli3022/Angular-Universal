@@ -1,6 +1,5 @@
 import { Component } from '@angular/core'
-import { Router } from '@angular/router';
-
+import { Router } from '@angular/router'
 
 @Component({
 	selector: 'app-sidebar',
@@ -8,8 +7,49 @@ import { Router } from '@angular/router';
 	styleUrls: ['./sidebar.component.scss'],
 })
 export class SidebarComponent {
+	routes: Route[] = [
+		{
+			label: '/ Home',
+			url: '/home'
+		},
+		{
+			label: '/ About',
+			url: '/about'
+		},
+		{
+			label: '/ Projects',
+			url: '/projects'
+		},
+		{
+			label: '/ Contact',
+			url: '/contact'
+		},
+	]
+
+	socialMedias: SocialMedia[] = [
+		{
+			label: 'instagram',
+			src: '/assets/images/socialmedia/instagram.svg',
+			url: 'https://www.youtube.com/'
+		},
+		{
+			label: 'tiktok',
+			src: '/assets/images/socialmedia/tiktok.svg',
+			url: 'https://www.youtube.com/'
+		},
+		{
+			label: 'twitter',
+			src: '/assets/images/socialmedia/twitter.svg',
+			url: 'https://www.youtube.com/'
+		},
+		{
+			label: 'youtube',
+			src: '/assets/images/socialmedia/youtube.svg',
+			url: 'https://www.youtube.com/'
+		},
+	]
 	isSidebarOpen = false
-	constructor() {}
+	constructor() { }
 
 	toggleSidebar() {
 		this.isSidebarOpen = !this.isSidebarOpen
@@ -29,4 +69,15 @@ export class SidebarComponent {
 			}
 		}
 	}
+}
+
+interface Route {
+	label: string,
+	url: string,
+}
+
+interface SocialMedia {
+	label: string,
+	src: string,
+	url: string,
 }

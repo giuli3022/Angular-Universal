@@ -7,11 +7,6 @@
     width: 20%;
     position: absolute;
     z-index: 100;
-    nav {
-        a {
-            color: white;
-        }
-    }
     div {
         height: 80%;
         display: flex;
@@ -24,6 +19,12 @@
             color: styles.$light;
             padding-bottom: 1rem;
             list-style: none;
+            button {
+                background-color: transparent;
+                color: styles.$light;
+                font-weight: 500;
+                border: none;
+            }
             a {
                 color: styles.$light;
                 font-weight: 500;
@@ -35,17 +36,29 @@
         }
     }
     &-footer {
-        width: 100%;
+        width: 80%;
         display: flex;
         justify-content: space-around;
         align-items: center;
         position: absolute;
         bottom: 1rem;
-        left: 0;
+        left: 1.5rem;
         padding: 0;
         li {
-            color: styles.$light;
             list-style: none;
+            a {
+                background-color: styles.$accent;
+                width: 2rem;
+                height: 2rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 50%;
+                img {
+                    width: 1rem;
+                    height: 1rem;
+                }
+            }
         }
     }
 

@@ -1,48 +1,28 @@
 <aside class="sidebar" [class.showSidebar]="isSidebarOpen">
 	<div class="container-fluid">
-		<nav>
-			<a routerLink="home">/ Home</a>
-			<a routerLink="about">/ About</a>
-			<a routerLink="projects">/ Projects</a>
-			<a routerLink="contact">/ Contact</a>
-		</nav>
-
-		<!-- <ul>
+		<ul>
 			<li>
-				<a href="" class="active">
+				<button class="active">
 					<span>ESP</span>
-				</a>
+				</button>
 				-
-				<a href="">
+				<button>
 					<span>ENG</span>
-				</a>
+				</button>
 			</li>
-			<li>
-				<a routerLink="/home" class="active">/ Home</a>
-			</li>
-			<li>
-				<a routerLink="/about">/ About</a>
-			</li>
-			<li>
-				<a routerLink="/projects">/ Projects</a>
-			</li>
-			<li>
-				<a routerLink="/contact">/ Contact</a>
+			<li *ngFor="let route of routes">
+				<a [routerLink]="route.url" routerLinkActive="active">{{ route.label }}</a>
 			</li>
 		</ul>
 		<ul class="sidebar-footer">
-			<li>
-                <a href="">fb</a>
-            </li>
-			<li>
-                <a href="">tw</a>
-            </li>
-			<li>
-                <a href="">ig</a>
-            </li>
-			<li>
-                <a href="">yt</a>
-            </li>
-		</ul> -->
+			<li *ngFor="let socialMedia of socialMedias">
+				<a [routerLink]="socialMedia.url" target="_blank">
+					<img
+						[src]="socialMedia.src"
+						alt="socialMedia.label"
+					/>
+				</a>
+			</li>
+		</ul>
 	</div>
 </aside>
