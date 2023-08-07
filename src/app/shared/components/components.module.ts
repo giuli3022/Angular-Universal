@@ -2,7 +2,7 @@
 import { NgModule } from '@angular/core'
 import { CommonModule } from '@angular/common'
 import { ReactiveFormsModule } from '@angular/forms'
-import { RouterModule, Routes } from '@angular/router';
+import { RouterModule, Routes } from '@angular/router'
 
 // Shared Imports
 import { NavbarComponent } from './navbar/navbar.component'
@@ -13,7 +13,7 @@ const components: any[] = [NavbarComponent, FooterComponent, SidebarComponent]
 
 @NgModule({
 	declarations: [...components],
-	imports: [CommonModule, ReactiveFormsModule, RouterModule ],
+	imports: [CommonModule, ReactiveFormsModule, RouterModule],
 	exports: [...components],
 })
 export class ComponentsModule {}

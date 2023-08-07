@@ -10,19 +10,19 @@ export class SidebarComponent {
 	routes: Route[] = [
 		{
 			label: '/ Home',
-			url: '/home'
+			url: '/home',
 		},
 		{
 			label: '/ About',
-			url: '/about'
+			url: '/about',
 		},
 		{
 			label: '/ Projects',
-			url: '/projects'
+			url: '/projects',
 		},
 		{
 			label: '/ Contact',
-			url: '/contact'
+			url: '/contact',
 		},
 	]
 
@@ -30,26 +30,26 @@ export class SidebarComponent {
 		{
 			label: 'instagram',
 			src: '/assets/images/socialmedia/instagram.svg',
-			url: 'https://www.youtube.com/'
+			url: 'https://www.youtube.com/',
 		},
 		{
 			label: 'tiktok',
 			src: '/assets/images/socialmedia/tiktok.svg',
-			url: 'https://www.youtube.com/'
+			url: 'https://www.youtube.com/',
 		},
 		{
 			label: 'twitter',
 			src: '/assets/images/socialmedia/twitter.svg',
-			url: 'https://www.youtube.com/'
+			url: 'https://www.youtube.com/',
 		},
 		{
 			label: 'youtube',
 			src: '/assets/images/socialmedia/youtube.svg',
-			url: 'https://www.youtube.com/'
+			url: 'https://www.youtube.com/',
 		},
 	]
 	isSidebarOpen = false
-	constructor() { }
+	constructor() {}
 
 	toggleSidebar() {
 		this.isSidebarOpen = !this.isSidebarOpen
@@ -72,12 +72,12 @@ export class SidebarComponent {
 }
 
 interface Route {
-	label: string,
-	url: string,
+	label: string
+	url: string
 }
 
 interface SocialMedia {
-	label: string,
-	src: string,
-	url: string,
+	label: string
+	src: string
+	url: string
 }
